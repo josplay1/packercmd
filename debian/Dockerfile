@@ -25,6 +25,8 @@ RUN         dpkg --add-architecture i386 \
                 tzdata \
                 wget \
                 xvfb \
+                build-essential \
+                libdl-dev \
                 libc6 \
                 libc6-dev \
                 libc6-dev:i386 \
@@ -52,6 +54,8 @@ RUN         cd /tmp/ \
             && tar xvf rcon.tar.gz \
             && mv rcon-0.10.3-amd64_linux/rcon /usr/local/bin/
 
+#Benerin Library
+RUN         export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib/x86_64-linux-gnu
 
 # Temp fix for things that still need libssl1.1
 RUN         if [ "$(uname -m)" = "x86_64" ]; then \
