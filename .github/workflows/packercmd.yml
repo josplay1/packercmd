@@ -24,6 +24,7 @@ jobs:
         distro:
           - debian
           - dotnet
+          - proton
 
     steps:
       - uses: actions/checkout@v4
