@@ -48,7 +48,7 @@ RUN         dpkg --add-architecture i386 \
                 lib32gcc1 \
                 libgl1-mesa-glx \
                 libxcursor1 \
-                libxrandr2  \
+                libxrandr2 \
                 libgcc-4.8-dev
                 
 
