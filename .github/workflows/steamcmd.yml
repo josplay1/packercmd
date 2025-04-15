@@ -40,4 +40,4 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ github.repository_owner }}/steamcmd:${{ matrix.distro }}
-            ${{ github.repository_owner == 'pelican-eggs' && format('ghcr.io/josplay1/packercmd:{0}', matrix.distro) || '' }}
+            ${{ github.repository_owner == 'josplay1' && format('ghcr.io/josplay1/packercmd:{0}', matrix.distro) || '' }}
