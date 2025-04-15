@@ -46,8 +46,8 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v6
         with:
-          context: ./packercmd  # Update path ke 'packercmd'
-          file: ./packercmd/${{ matrix.distro }}/Dockerfile  # Update path ke 'packercmd'
+          context: ../packercmd  # Update path ke 'packercmd'
+          file: ../packercmd/${{ matrix.distro }}/Dockerfile  # Update path ke 'packercmd'
           platforms: linux/amd64
           push: true
           tags: |
