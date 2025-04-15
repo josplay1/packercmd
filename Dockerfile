@@ -26,6 +26,7 @@ RUN         dpkg --add-architecture i386 \
                 wget \
                 xvfb \
                 libc6-dev \
+                libc6-dev:i386 \
                 lib32gcc-s1 \
                 lib32stdc++6 \
                 lib32tinfo6 \
