@@ -23,9 +23,7 @@ jobs:
       matrix:
         distro:
           - debian
-          - ubuntu
           - dotnet
-          - proton
 
     steps:
       - uses: actions/checkout@v4
