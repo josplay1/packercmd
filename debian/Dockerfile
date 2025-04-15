@@ -44,7 +44,13 @@ RUN         dpkg --add-architecture i386 \
                 libsdl2-2.0-0 \
                 libsdl2-2.0-0:i386 \
                 libssl-dev:i386 \
-                libtinfo6:i386
+                libtinfo6:i386 \
+                lib32gcc1 \
+                libgl1-mesa-glx \
+                libxcursor1 \
+                libxrandr2  \
+                libgcc-4.8-dev
+                
 
 # Install rcon
 RUN         cd /tmp/ \
