@@ -27,7 +27,6 @@ RUN         dpkg --add-architecture i386 \
                 xvfb \
                 build-essential \
                 libdl-dev \
-                libc6 \
                 libc6-dev \
                 libc6-dev:i386 \
                 lib32gcc-s1 \
