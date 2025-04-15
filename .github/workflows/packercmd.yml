@@ -25,6 +25,7 @@ jobs:
           - debian
           - dotnet
           - proton
+          - ubuntu18
 
     steps:
       - uses: actions/checkout@v4
