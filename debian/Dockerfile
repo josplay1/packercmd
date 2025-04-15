@@ -45,7 +45,7 @@ RUN         dpkg --add-architecture i386 \
                 libsdl2-2.0-0:i386 \
                 libssl-dev:i386 \
                 libtinfo6:i386 \
-                lib32gcc1 \
+                lib32gcc-s1 \
                 libgl1-mesa-glx \
                 libxcursor1 \
                 libxrandr2 \
