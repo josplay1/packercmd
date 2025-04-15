@@ -48,8 +48,7 @@ RUN         dpkg --add-architecture i386 \
                 lib32gcc-s1 \
                 libgl1-mesa-glx \
                 libxcursor1 \
-                libxrandr2 \
-                libgcc-4.8-dev
+                libxrandr2
                 
 
 # Install rcon
@@ -64,6 +63,9 @@ RUN         if [ "$(uname -m)" = "x86_64" ]; then \
                 dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb && \
                 rm libssl1.1_1.1.0g-2ubuntu4_amd64.deb; \
             fi
+
+#buat symlink
+RUN ln -s /usr/lib/x86_64-linux-musl/libc.so /lib/libc.musl-x86_64.so.1
 
 # Set the locale
 RUN         sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
