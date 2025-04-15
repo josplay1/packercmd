@@ -43,7 +43,8 @@ RUN         dpkg --add-architecture i386 \
                 libsdl2-2.0-0 \
                 libsdl2-2.0-0:i386 \
                 libssl-dev:i386 \
-                libtinfo6:i386
+                libtinfo6:i386 \
+                mono-complete
 
 # Install rcon
 RUN         cd /tmp/ \
